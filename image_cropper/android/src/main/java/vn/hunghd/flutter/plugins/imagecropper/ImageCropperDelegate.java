@@ -194,13 +194,6 @@ public class ImageCropperDelegate implements PluginRegistry.ActivityResultListen
              activity.getWindow().setStatusBarColor(statusBarColor != null ? statusBarColor : Color.TRANSPARENT);
           }
         }
-        else{
-        if (statusBarColor != null) {
-            options.setStatusBarColor(statusBarColor);
-        } else if (toolbarColor != null) {
-            options.setStatusBarColor(darkenColor(toolbarColor));
-        }
-        }
         if (toolbarWidgetColor != null) {
             options.setToolbarWidgetColor(toolbarWidgetColor);
         }
